@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Charles Elikem Kumi | Portfolio</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <header class="nav">
+    <a href="#home" class="logo">Charles Kumi</a>
+    <button id="menu-btn" aria-label="Toggle menu">&#9776;</button>
+    <nav id="menu">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ── Hero ── -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <!-- Profile photo -->
+      <div class="avatar" aria-label="Profile photo">
+        <img src="profile.png" alt="Charles Elikem Kumi">
+      </div>
+
+      <p class="eyebrow">Computer Engineering Student</p>
+      <h1>Hi, I'm <span class="accent">Charles Elikem Kumi</span>.</h1>
+      <p class="lead">
+        I am <span id="typewriter"></span>
+      </p>
+
+      <!-- Social links -->
+      <div class="social-links">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:kumicharles497@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">See my projects</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── About ── -->
+  <section id="about" class="section reveal">
+    <h2>About me</h2>
+    <p>
+      I am currently a student at Academic City University studying Computer Engineering.
+      This choice comes from my deep interest in the tech industry. I aspire to build a
+      career as an engineer, creating solutions that make a meaningful impact through
+      technology. I am continuously exploring new skills in programming, engineering,
+      and emerging technologies while seeking opportunities to grow both academically
+      and professionally.
+    </p>
+    <p style="margin-top: 1rem;">
+      I enjoy connecting with like-minded individuals, industry professionals, and fellow
+      learners who share an interest in technology and innovation. I am always open to
+      learning, collaborating, and contributing to projects that challenge me to grow
+      and make a difference.
+    </p>
+  </section>
+
+  <!-- ── Education ── -->
+  <section id="education" class="section reveal">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2023 – Present</span>
+          <h3>BSc. Computer Engineering</h3>
+          <p>Academic City University College, Accra, Ghana</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2020 – 2023</span>
+          <h3>West African Senior School Certificate (WASSCE)</h3>
+          <p>Sonrise Christian High School</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects ── -->
+  <section id="projects" class="section reveal">
+    <h2>Projects</h2>
+    <div class="grid">
+
+      <article class="card">
+        <div class="card-header">
+          <i class="fas fa-school card-icon"></i>
+          <div class="card-links">
+            <a href="#" title="View code" aria-label="View source code"><i class="fab fa-github"></i></a>
+            <a href="#" title="Live demo" aria-label="View live demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>School Registry App</h3>
+        <p>A PHP and MySQL web app for managing school records, student data, and administrative workflows.</p>
+        <div class="tag-row">
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">HTML/CSS</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <i class="fas fa-server card-icon"></i>
+          <div class="card-links">
+            <a href="#" title="View code" aria-label="View source code"><i class="fab fa-github"></i></a>
+            <a href="#" title="Live demo" aria-label="View live demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>AWS Web Server</h3>
+        <p>This portfolio site, deployed on an EC2 instance running Apache. Configured with security groups and Elastic IP.</p>
+        <div class="tag-row">
+          <span class="tag">AWS</span>
+          <span class="tag">EC2</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Apache</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <i class="fas fa-vote-yea card-icon"></i>
+          <div class="card-links">
+            <a href="#" title="View code" aria-label="View source code"><i class="fab fa-github"></i></a>
+            <a href="#" title="Live demo" aria-label="View live demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>School Election WebApp</h3>
+        <p>A custom web app for holding secure school elections at Sonrise Christian High School.</p>
+        <div class="tag-row">
+          <span class="tag">JavaScript</span>
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section id="skills" class="section reveal">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h4>Frontend</h4>
+        <ul class="skills">
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Backend</h4>
+        <ul class="skills">
+          <li>PHP</li>
+          <li>MySQL</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Tools &amp; Cloud</h4>
+        <ul class="skills">
+          <li>Git</li>
+          <li>AWS EC2</li>
+          <li>Linux CLI</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section id="contact" class="section reveal">
+    <h2>Contact</h2>
+    <p class="contact-intro">
+      Have a project in mind or just want to connect? Send me a message.
+    </p>
+
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i>
+          <a href="mailto:kumicharles497@gmail.com">kumicharles497@gmail.com</a>
+        </p>
+        <p><i class="fab fa-github"></i>
+          <a href="https://github.com/" target="_blank" rel="noopener">github.com/charleskumi</a>
+        </p>
+        <p><i class="fab fa-linkedin-in"></i>
+          <a href="https://linkedin.com/in/" target="_blank" rel="noopener">linkedin.com/in/charleskumi</a>
+        </p>
+      </div>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          Send Message <i class="fas fa-paper-plane"></i>
+        </button>
+        <p class="form-status" id="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Charles Elikem Kumi &mdash; Built with HTML, CSS &amp; JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
